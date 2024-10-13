@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Work+Sans:wght@500&display=swap');
+body{
+    width: 725px;
+    height: 505px;
+    left: 346px ;
+    top: 55px;
+
+}
+.big{
+    display: flex;
+}
+* {
+    box-sizing:border-box;
+}
+.left {
+    position: relative;
+    left: 10px ;
+    top: 10px;
+    width:362.5px ;
+    height: 505px;
+}
+.title {
+    position: absolute;
+    left: 23px;
+    top: -10px;
+    width: 127px;
+    
+}
+.title p{
+    color: #2E4049;
+    font-family: Shippori Mincho;
+    font-size: 30px;
+}
+.registerBox {
+position: absolute;
+left:33px;
+top: 100px;
+width: 300px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: white;
+}
+.registerBoxx {
+    position: absolute;
+    left:33px;
+    top: 64px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    }
+.registerBox h4{
+    /* font-size: large; */
+    font-family: Work Sans;
+    
+}
+.registerBoxx h4{
+    /* font-size: large; */
+    font-family: Work Sans;
+    margin-bottom: -3px;
+    margin-top: -1px;
+}
+.registerBox p{
+    margin-right: 80px;
+    color: #8A8A8A;
+}
+
+.all {
+    margin-right: 80px;
+    margin-bottom: 20px;
+    color: #8A8A8A;
+}
+.all a{
+    font-family: Work Sans;
+    color: rgb(84, 96, 204);
+}
+.textBox{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    width: 326px;
+    height: 30px;
+    align-items: center;
+    background-color: var(--gray-50);
+    border-radius: 4px;
+    border: 1px solid;
+    border-color:#d7cdcd;
+}
+.gender{
+    display: flex;
+    margin-right: 80px;
+    margin-top: -10px; 
+}
+.radioButton{
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.Create{
+    padding: 12px 28px; 
+    background-color: rgba(255, 109, 109, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 14.32px;
+    color: aliceblue;  
+    margin-top: -4px; 
+    margin-bottom: -10px;
+}
+.login{
+    padding: 15px 35px; 
+    background-color:#2E4049;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 14.32px;
+    color: aliceblue;  
+    margin-right: 220px;
+}
+button:hover {
+
+    background-color: rgb(42, 132, 154);
+
+}
+.CopyRights{
+    position: absolute;
+    left:23px ;
+    top: 460px; ;
+    
+}
+.CopyRights p{
+    color: #8A8A8A;
+    font-family: "Lato-Regular";
+    font-size: 11px;
+}
+.right{
+    position: relative;
+    left: 30px ;
+    top: 10px;
+    width:362.5px ;
+    height: 505px;
+    background-color: #77D7D3;
+    background-image:url(/img/login/mask.png);
+}
+.inner {
+    position: absolute;
+    left:49px;
+    top: 100px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inner p{
+    color:#fff;
+    font-weight: bold;
+    font-family: "Lato";
+    font-size: 30px;
+}

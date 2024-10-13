@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/Bank.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Sue+Ellen+Francisco&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Sue+Ellen+Francisco&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <title>Bank Information</title>
+  </head>
+  <body>
+    
+      <div class="top-navbar ">
+        <div class="left ">
+          <div class="call">
+            <i class="fa fa-phone-alt"></i>
+            <span>11111111111111</span>
+          </div>
+          <div class="email">
+            <i class="fa fa-envelope"></i>
+            <span>givingcircle@gmail.com</span>
+          </div>
+        </div>
+        <div class="right ">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+         
+        </div>
+      </div>
+
+      <div class="bottom-nav ">
+        <h1>GivingCircle</h1>
+
+        
+        <ul class="nav_links">
+          <li><a href="/html/home.html"> Home </a></li>
+          <li><a href="/html/about.html">About Us</a></li>
+          <li class="Dropdown">
+            <a href="/html/categories.html" class="dropptn">categories</a>
+            <div class="drobdowncont">
+              <a href="#">Food</a>
+              <a href="#">Clothes</a>
+              <a href="#">Books</a>
+              <a href="#">Home </a>
+              <a href="#">Devices</a>
+              <a href="#">Toys</a>
+            </div>
+          </li>
+          <li><a href="/html/event.html">Event</a></li>
+          <li><a href="/html/contactus.html">Contact</a></li>
+        </ul>
+        
+
+        <a class="cta" href="/html/categories.html"><button class="button1">Donate</button></a>
+
+        <div class="ls">
+          <a onclick="openLogin()">LOGIN</a>
+          <a onclick="openSingup()">SING UP</a>
+        </div>
+      </div>
+    
+<div class="intro" >
+
+<div class="intro_content">
+<h1>Donation</h1>
+<p>First charity activity of this</p>
+<p>summer today</p>
+</div>
+<div class="makeADiffrence">
+<h2>Make a Difference: Donate Money to Support Our Cause</h2>
+<p>Thank you for considering a monetary donation to support our cause. Your generous contribution will play a vital role in enabling us to continue our mission and make a positive impact on the lives of those in need. Donating money is a convenient and impact way to support our organization as it allows us to allocate funds where they are most needed, including providing essential resources, implementing critical programs, and supporting ongoing initiatives. Your donation will help us address pressing challenges and work towards creating a better future for individuals and communities. We are grateful for your support, and every dollar you contribute makes a meaningful difference. Together, we can make a lasting impact and bring about positive change. Please use the donation form below to make your secure online donation, or explore alternative giving options if available. Thank you for your generosity and commitment to our cause.</p>
+</div>
+</div>
+<div class="donationForm">
+    <div class="donateHere">
+      <h3>Donate Here</h3>
+      <p>Veniam quae. Nostrum facere repellendus minus quod aut aliquam neque.</p>
+      <div class="qrContainer">
+        <div class="QR"><img class="img" src="/img/bank/qrPic.jpeg"/></div>
+        <div class="qrcont">
+            <p>Scan this QR code to Donate <span class="walfare">walfare</span></p>
+        </div>
+      </div>
+      <div class="acceptPaymentMethod">
+        <p>Accepted Payment Method</p>
+      </div>
+      <div class="Payment">
+        <div class="element"><img class="img" src="/img/bank/Photo3.png"/></div>
+        <div class="element"><img class="img" src="/img/bank/Photo2.png"/></div>
+        <div class="element"><img class="img" src="/img/bank/Photo1.png" /></div>
+        <div class="element"><img class="img" src="/img/bank/Photo4.png" /></div>
+      </div>
+    </div>
+    <div class="bankDetails">
+        <div class="bankText">
+        <h3>Bank Details</h3>
+        <p>Create and format headings, paragraphs, blockquotes images and video all in one place instead </p>
+    </div>
+    <div class="tot">
+        <p class="boo">Account Number <br>  
+            Beneficiar Name<br>IFSC Code  </p>
+        <p>2223330000456987<br>Walfare Organization<br>WRDSBI0BNKPIS</p>
+    </div>   
+        <button class="copyButton" id="copyButton">Copy Account Details</button>
+        <script>
+            const copyButton = document.getElementById('copyButton');
+            copyButton.addEventListener('click', () => {
+                const text = '2223330000456987 Walfare Organization WRDSBI0BNKPIS';
+                const x=document.createElement('textarea');
+                x.value=text;
+                document.body.appendChild(x);
+                x.select();
+                x.setSelectionRange(0,99999);
+                document.execCommand('copy');
+                document.body.removeChild(x);
+                alert("Information copied"); 
+            });
+        </script>
+    </div>
+</div>
+<div class="footer">
+    <div class="content">
+      <div class="div">
+        <div class="upper">
+          <div class="left-side">
+            <div class="left-side-up">
+              <div class="logo">
+                <div class="logo-text">GivingCircle</div>
+                <div class="logo-img"><div class="logo-img2"></div></div>
+              </div>
+              <p class="para">
+                Care about people to transforming their lives and exudes a
+                positives Impressiono believe. fundraising <br />NGO
+                organizations.
+              </p>
+            </div>
+            <div class="social">
+              <div class="element"><img class="img" src="/img/footer-icon/twitter-2.png"/></div>
+              <div class="element"><img class="img" src="/img/footer-icon/facebook.png"/></div>
+              <div class="element"><img class="img" src="/img/footer-icon/instagram-2.png" /></div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="right-side-all">
+              <div class="right-side-1">
+                <div class="title1">Get Involved</div>
+                <p class="list">
+                  <span class="span">About Us <br />Volunteer<br /></span>
+                  <span class="list-red">Causes</span>
+                  <span class="span"
+                    ><br />Events<br /><a href="/html/Bank.html">Financial Donations</a></span
+                  >
+                </p>
+              </div>
+              <div class="right-side-2">
+                <div class="title1">Contact</div>
+                <p class="list2">
+                  660 down town , 88 cairo<br />
+                  <br />help Need@walfare.com<br />22 88 000
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lower">
+          <img class="line" src="/img/footer-icon/Line.png" />
+          <p class="p">
+            Copyright © Walfare | Designed by sfsf - Powered by me
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>

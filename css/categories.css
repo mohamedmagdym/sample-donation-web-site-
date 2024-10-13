@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Shippori+Mincho:800|Work+Sans:500|Alumni+Sans:400|DM+Sans:500Abel:488|Bakbak+One:400|Allerta+Stencil:480');
+
+
+
+@keyframes slide-out {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-5%);
+    }
+}
+  
+@keyframes slide-in {
+    from {
+      transform: translateX(5%);
+    }
+    to {
+      transform: translateX(0);
+    }
+}
+  
+@keyframes slide-out-reverse {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(5%);
+    }
+}
+  
+@keyframes slide-in-reverse {
+    from {
+      transform: translateX(-5%);
+    }
+    to {
+      transform: translateX(0);
+    }
+}
+  
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+
+
+}
+
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #77D7D3;
+    height: 57px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.left {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35.98px;
+}
+
+.left .call {
+
+    margin-left: 287px;
+
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20.5px 28.5px;
+    background-color: #4BC9C4;
+    gap: 12.75px;
+    margin-right: 287px;
+    height: 57px;
+}
+
+
+
+.bottom-nav {
+
+    display: flex;
+
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color:#77D7D3;
+
+    position: relative;
+
+}
+
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-nav h1 {
+    position: absolute;
+    cursor: pointer;
+    left: 15.26%;
+
+
+}
+
+.nav_links {
+
+    list-style: none;
+    position: absolute;
+    left: 36.61%;
+
+}
+
+.nav_links ul {
+
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.nav_links li {
+
+    display: inline-block;
+    padding: 0px 12px;
+
+}
+
+.nav_links li a {
+
+    transition: all 0.3s ease 0s;
+
+}
+
+.nav_links li a:hover {
+
+    color: aqua;
+
+
+}
+
+.Dropdown {
+
+    position: relative;
+}
+
+.drobdowncont {
+
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    z-index: 5;
+}
+
+.drobdowncont a {
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    text-align: center;
+}
+
+.drobdowncont a:hover {
+
+    background-color: #f1f1f1;
+
+
+}
+
+.Dropdown:hover .drobdowncont {
+
+    display: block;
+
+}
+
+
+
+.button1 {
+    padding: 17.5px 28.6px;
+    background-color: rgba(255, 109, 109, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 14.32px;
+
+
+}
+
+.cta {
+
+    position: absolute;
+    right: 19.55%;
+}
+
+button:hover {
+
+    background-color: rgb(42, 132, 154);
+
+}
+
+.ls {
+
+    right: 5.73%;
+    gap: 34.25px;
+    position: absolute;
+}
+
+.ls a {
+
+    padding-right: 15px;
+    font-size: 14.32;
+
+    text-transform: uppercase;
+
+    justify-content: space-around;
+    transition: all 0.3s ease 0s;
+
+
+}
+
+.ls a:hover {
+    color: rgba(255, 109, 109, 1);
+    transition: all 0.3s ease 0s;
+}
+
+
+
+/* the two div */
+.container {
+    position: relative;
+    height: 697px;
+    background-color:#77D7D3;
+    display: grid; 
+    grid-template-columns: 40% 60%; 
+
+}
+  
+
+/*on the image*/
+.header {
+    align-items: flex-start;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    height: 160px;
+    justify-content: flex-start;
+    left: 100px;
+    min-width: 503px;
+    position: absolute;
+    top: 280px;
+    width: auto;
+}
+
+.headerone {
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 80px;
+    margin-top: -1px;
+    width: 503px;
+}
+
+.arrowright {
+    height: 36px;
+    left: 230px;
+    position: absolute;
+    top: 100px;
+    width: 35px;
+}
+
+.arrowleft {
+    height: 36px;
+    left: 65px;
+    position: absolute;
+    top: 100px;
+    width: 35px;
+}
+
+
+
+
+
+/* title   */
+
+.label .title {
+    color: transparent;
+    font-family: 'Abel';
+    font-weight: 400;
+    font-size: 39px;
+    left: 700px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 50px;
+    width: 700px;
+
+}
+.label .title .first {
+    color: white;
+}
+
+.label .title .span {
+    color: black;
+    font-family: 'Alumni Sans';
+}
+
+.label .title .second {
+    color: white;
+    font-family: 'Bakbak one';
+}
+
+
+
+
+/* icon*/
+
+.icon {
+    left: 820px;
+    object-fit: cover;
+    position: absolute;
+    top: 100px;
+
+
+}
+
+/*description p*/
+.para {
+    color: white;
+    font-family: 'Allerta Stencil';
+    font-weight: 400;
+    font-size: medium;
+    left: 590px;
+    letter-spacing: 0px;
+    line-height: 40px;
+    position: absolute;
+    text-align: center;
+    top: 350px;
+
+}
+
+/*ready to give*/
+.ready {
+    color: white;
+    font-family: 'Alumni Sans';
+    font-size: 40px;
+    font-weight: 400;
+    height: 10px;
+    left: 410px;
+    letter-spacing: 0;
+    line-height: 90px;
+    position: absolute;
+    text-align: center;
+    top: 480px;
+    width: 1088px;
+
+
+}
+
+
+/* donate now button */
+.donatb {
+    left: 410px;
+    position: absolute;
+    text-align: center;
+    top: 570px;
+    width: 1100px;
+
+}
+
+.button2 {
+    padding: 17.5px 28.6px;
+    background-color: rgb(42, 132, 154);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 14.32px;
+    color: floralwhite;
+
+
+
+}
+
+
+
+.info { 
+    color: white; 
+    height: 100px; 
+    padding: 10px; 
+  } 

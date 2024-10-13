@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Work+Sans:wght@500&display=swap');
+
+
+body {
+
+
+
+    background-color:white;
+    
+
+}
+
+
+li,
+a,
+button {
+
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+
+    color: black;
+    text-decoration: none;
+
+
+}
+
+/* header{
+display: flex;
+
+
+background-color: rgb(175, 97, 97);
+
+} */
+
+/* .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 300 10%;
+
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #77D7D3;
+    height: 57px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.left {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35.98px;
+}
+
+.left .call {
+
+    margin-left: 287px;
+
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20.5px 28.5px;
+    background-color: #4BC9C4;
+    gap: 12.75px;
+    margin-right: 287px;
+    height: 57px;
+}
+
+
+
+.bottom-nav {
+    position: relative;
+    top: 0;
+    display: flex;
+
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color: rgb(254, 255, 255);
+
+    
+
+}
+
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-nav h1 {
+    position: absolute;
+    cursor: pointer;
+    left: 15.26%;
+
+
+}
+
+.nav_links {
+
+    list-style: none;
+    position: absolute;
+    left: 36.61%;
+
+}
+
+.nav_links ul {
+
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.nav_links li {
+
+    display: inline-block;
+    padding: 0px 12px;
+
+}
+
+.nav_links li a {
+
+    transition: all 0.3s ease 0s;
+
+}
+
+.nav_links li a:hover {
+
+    color: aqua;
+
+
+}
+
+.Dropdown {
+
+    position: relative;
+}
+
+.drobdowncont {
+
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    z-index: 5;
+}
+
+.drobdowncont a {
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    text-align: center;
+}
+
+.drobdowncont a:hover {
+
+    background-color: #f1f1f1;
+
+
+}
+
+.Dropdown:hover .drobdowncont {
+
+    display: block;
+
+}
+
+
+
+.button1 {
+    padding: 17.5px 28.6px;
+    background-color: rgba(255, 109, 109, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 14.32px;
+
+
+}
+
+.cta {
+
+    position: absolute;
+    right: 19.55%;
+}
+
+button:hover {
+
+    background-color: rgb(42, 132, 154);
+
+}
+
+.ls {
+
+    right: 5.73%;
+    gap: 34.25px;
+    position: absolute;
+}
+
+.ls a {
+
+    padding-right: 15px;
+    font-size: 14.32;
+
+    text-transform: uppercase;
+
+    justify-content: space-around;
+    transition: all 0.3s ease 0s;
+
+
+}
+
+.ls a:hover {
+
+    color: rgba(255, 109, 109, 1);
+    transition: all 0.3s ease 0s;
+}
+
+.intro {
+
+    width: 100%;
+    height: 540px;
+    flex-shrink: 0;
+    background-image: url(/img/bank/Bank.png);
+    background-size: 100%;
+    position: relative;
+    
+
+
+}
+
+.intro_content {
+
+    position: absolute;
+    left: 270px ;
+    top: 210.15px;
+    
+
+}
+
+.intro_content h1 {
+
+    color: #ffffff;
+
+    font-family: Sue Ellen Francisco;
+    font-size: 39.974px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 108.3%;
+    text-transform: capitalize;
+
+}
+
+.intro_content p {
+
+    text-transform: capitalize;
+    color: #ffff;
+
+    font-family: "Shippori Mincho";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 108.3%;
+}
+.makeADiffrence {
+    position: relative;
+    top: 590px;
+    margin-left: 25%;
+    width: 700px;
+    display: block;
+}
+.makeADiffrence h2{
+    font-size:25px;
+    text-align: center;
+    font-family: "Shippori Mincho";
+    color: #2E4049;
+}
+.makeADiffrence p{
+    font-size: 18px;
+    display: flex;
+    color: #727272;
+    font-family: Work Sans;
+}
+.donationForm {
+    position: relative;
+    top: 450px;
+    margin-left: 25%;
+    background-color: #ECF1F0;
+    width: 580px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.donateHere{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 250px;
+    height: 300px;
+
+}
+
+.donateHere p {
+    color: #727272;
+
+font-size: small;
+}
+.qrContainer{
+    background-color: #ffffff;
+    border-radius: 7px;
+    align-self: center;
+    display: flex;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.QR {
+    margin: 3px;
+}
+.qrcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qrcont p{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Work Sans";
+}
+.walfare {
+   color: #FF6D6D; 
+}
+
+.acceptPaymentMethod p{
+    font-size: medium;
+    margin-top: 4px;
+    font-weight: 800;
+    font-family: "Shippori Mincho";
+    margin-top: 4px;
+
+}
+.Payment {
+    display: flex;
+    margin-top: 4px;
+    background-color: #ffffff;
+    height: 71px;
+
+    border-radius: 29px;
+}
+.Payment .element{
+    width: 7px;
+    margin-top: 5px;
+
+    height: 30px;
+    margin-left: 8px;
+    margin-right:39px ;
+    
+    
+}
+.bankDetails {
+    position: absolute;
+    left: 54%;
+    margin-top: 5%;
+    margin-right: 5px;
+}
+.bankDetails p{
+    color: #727272;
+    font-size: small;}
+.tot {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: row;
+}
+.tot p{
+font-family: "Work Sans";
+font-size: 11px;
+}
+.tot .boo{
+   font-weight: 500;
+   margin-right: 5px ;
+   color: #2e4049;
+}
+.copyButton{
+    margin-top: 27px;
+    padding: 13px 28.6px;
+    background-color: #2E4049;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 14.32px;
+    color: #ECF1F0;
+}
+    .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 0px;
+    position: relative;
+    background-color: #2e4049;
+    top: 550px;
+}
+
+.footer .content {
+    position: relative;
+    width: 100%;
+    height: 470px;
+}
+
+.footer .div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 70px;
+    position: relative;
+    top: 75px;
+}
+
+.footer .upper {
+    display: flex;
+    width: 960px;
+    align-items: flex-start;
+    gap: 27px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.footer .left-side {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+}
+
+.footer .left-side-up {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    align-items: flex-start;
+    gap: 19px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.footer .logo {
+    position: relative;
+    width: 200px;
+    height: 41px;
+}
+
+.footer .logo-text {
+    position: absolute;
+    top: 0;
+    left: 22px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: 800;
+    color: white;
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.footer .logo-img {
+    position: absolute;
+    width: 15px;
+    height: 34px;
+    top: 4px;
+    left: 1px;
+    background-image: url("/img/footer-icon/Vector\ 1\ \(11\).png");
+    background-size: 100% 100%;
+}
+
+.footer .logo-img2 {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    top: 2px;
+    left: 3px;
+    background-color: #77d7d3;
+    border-radius: 3.61px;
+}
+
+.footer .para {
+    position: relative;
+    width: 291px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 21px;
+}
+
+.footer .social {
+    display: flex;
+    width: 228px;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.footer .element {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-color: #384c56;
+    border-radius: 24.06px;
+}
+
+.footer .img {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 17px;
+    left: 16px;
+}
+
+.footer .right-side {
+    display: inline-flex;
+    flex-direction: column;
+    height: 190px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    padding: 45px 40px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #384c56;
+}
+
+.footer .right-side-all {
+    display: inline-flex;
+    height: 197px;
+    align-items: center;
+    gap: 56px;
+    position: relative;
+}
+
+.footer .right-side1 {
+    display: flex;
+    flex-direction: column;
+    width: 154px;
+    height: 201px;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+
+.footer .title1 {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.footer .list {
+    position: relative;
+    width: 163px;
+    margin-bottom: -27px;
+    margin-right: -8.8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    color: transparent;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+.footer .span {
+    color: white;
+}
+
+.footer .list-red {
+    color: #ff6d6d;
+}
+
+.footer .right-side2 {
+    display: flex;
+    flex-direction: column;
+    width: 200.5px;
+    align-items: flex-start;
+    gap: 44.1;
+    position: relative;
+}
+
+.footer .list2 {
+    position: relative;
+    width: 200.5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+.footer .lower {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.footer .line {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    margin-top: -0.8px;
+}
+
+.footer .p {
+    position: relative;
+    width: fit-content;
+    font-family: initial;
+    font-weight: 400;
+    color: white;
+    font-size: 14.5px;
+    letter-spacing: 0;
+    line-height: 21px;
+    white-space: nowrap;
+
+}
